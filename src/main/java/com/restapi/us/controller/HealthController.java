@@ -10,4 +10,8 @@ public class HealthController {
     public ResponseEntity<String> healthCheck(){
         return ResponseEntity.ok().build();
     }
+        @GetMapping(value = "/test")
+    public ResponseEntity<String> healthCheck(){
+        return "Demo";
+    }
 }
